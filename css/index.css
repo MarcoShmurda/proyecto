@@ -38,7 +38,7 @@ section {
 }
 
 section .box {
-  width: 50%;
+  width: calc(50% - 2em);
   height: 17vh;
   border-bottom: 2.5px solid #2f2f2f;
   border-radius: 15px;
@@ -46,7 +46,7 @@ section .box {
   display: -ms-flexbox;
   display: flex;
   padding: 15px 10px;
-  margin: 1em 0;
+  margin: 1em;
   -webkit-box-shadow: 1px 1px 3px 0px #151515;
           box-shadow: 1px 1px 3px 0px #151515;
 }
@@ -170,7 +170,7 @@ section .box .agg .tooltip {
   height: -moz-max-content;
   height: max-content;
   width: 20px;
-  margin: 5px 0;
+  margin: 10px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -192,5 +192,10 @@ section .box .agg i {
 
 section .box .agg span {
   display: none;
+  background-color: #f3f3f3;
+  padding: 7px;
+  border-radius: 5px;
+  color: #292929;
+  border: 1px solid #292929;
 }
 /*# sourceMappingURL=index.css.map */
