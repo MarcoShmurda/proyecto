@@ -10,7 +10,7 @@ a{
     text-decoration: none;
 }
 
-$color-primary: rgb(52, 114, 93);
+$color-primary: rgb(196, 49, 42);
 body{
     overflow-x: hidden;
 }
@@ -45,23 +45,28 @@ header{
             display: flex;
             align-items: center;
             margin-left: 30px;
+            height: 4vh;
             li{
                 width: 100%;
+                height: 100%;
                 margin: 0 7px;
                 font-size: 22px;
+                display: flex;
+                align-items: flex-start;
                 &.active{
                     border-bottom: 2.5px solid $color-primary;
                 }
                 
                 a{
-                    width: 100%;
+                box-sizing: content-box;
+                width: 100%;
                     height: 100%;
                     display: flex;
                     align-content: center;
                     justify-content: center;
                     color: rgb(41, 41, 41);
                     &:hover{
-                        color: rgb(90, 90, 90);
+                        color: rgb(114, 114, 114);
                     }
                 }
             }
@@ -89,7 +94,7 @@ header{
                 border-radius: 60px;
                 border: 1px solid $color-primary;
                 box-shadow: 1px 1px 4px 0 #000;
-                
+
                     &:focus{
                         outline: none;
                     }
