@@ -20,6 +20,97 @@ body {
 
 section {
   width: 100vw;
+  height: 80vh;
+  background-color: #454545;
+}
+
+section .box-index {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .box-index .box-left {
+  width: 40%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .box-index .box-left img {
+  width: 350px;
+}
+
+section .box-index .box-right {
+  width: 60%;
+  height: 70%;
+}
+
+section .box-index .box-right .text-welcome {
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section .box-index .box-right .text-welcome p {
+  color: #fff;
+  font-size: 3.5vmin;
+  font-family: 'Montserrat' , 'sans-serif';
+}
+
+section .box-index .box-right .box-ins {
+  height: 15%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section .box-index .box-right .box-ins div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 30px;
+}
+
+section .box-index .box-right .box-ins div i {
+  color: #cf1717;
+  font-size: 40px;
+}
+
+section .box-index .box-right .box-ins div span {
+  color: #fff;
+  font-size: 4vmin;
+  margin: 0 20px;
+}
+
+.shopers {
+  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -32,12 +123,11 @@ section {
           align-items: flex-start;
   padding-left: 15px;
   padding-top: 30px;
-  -webkit-box-shadow: -3px 3px 9px 1px #000 inset;
-          box-shadow: -3px 3px 9px 1px #000 inset;
   background-color: #cfcfcf;
+  padding-bottom: 100vh;
 }
 
-section .box {
+.shopers .box {
   width: calc(50% - 2em);
   height: 17vh;
   border-bottom: 2.5px solid #2f2f2f;
@@ -51,7 +141,7 @@ section .box {
           box-shadow: 1px 1px 3px 0px #151515;
 }
 
-section .box .logo {
+.shopers .box .logo {
   height: 100%;
   width: 20%;
   display: -webkit-box;
@@ -62,11 +152,11 @@ section .box .logo {
           justify-content: center;
 }
 
-section .box .logo img {
+.shopers .box .logo img {
   height: 100%;
 }
 
-section .box .title {
+.shopers .box .title {
   height: 100%;
   width: 55%;
   margin: 0 5%;
@@ -85,7 +175,7 @@ section .box .title {
           align-items: center;
 }
 
-section .box .title .title_shop {
+.shopers .box .title .title_shop {
   width: 100%;
   height: 75%;
   font-size: 5vmin;
@@ -102,14 +192,14 @@ section .box .title .title_shop {
           justify-content: center;
 }
 
-section .box .title .title_shop img {
+.shopers .box .title .title_shop img {
   -o-object-fit: cover;
      object-fit: cover;
   height: 100%;
   width: 100%;
 }
 
-section .box .title .tags {
+.shopers .box .title .tags {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,7 +209,7 @@ section .box .title .tags {
   height: 25%;
 }
 
-section .box .title .tags div {
+.shopers .box .title .tags div {
   border: 2px solid #c4312a;
   border-radius: 10px;
   padding: 4px;
@@ -127,25 +217,25 @@ section .box .title .tags div {
   cursor: pointer;
 }
 
-section .box .title .tags div:first-child {
+.shopers .box .title .tags div:first-child {
   margin-left: 25px;
 }
 
-section .box .title .tags div:hover {
+.shopers .box .title .tags div:hover {
   background-color: #c4312a;
 }
 
-section .box .title .tags div:hover span {
+.shopers .box .title .tags div:hover span {
   color: #fff;
 }
 
-section .box .title .tags div span {
+.shopers .box .title .tags div span {
   font-weight: 200;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1vmin;
 }
 
-section .box .agg {
+.shopers .box .agg {
   width: 15%;
   height: 100%;
   display: -webkit-box;
@@ -163,7 +253,7 @@ section .box .agg {
           align-items: center;
 }
 
-section .box .agg .tooltip {
+.shopers .box .agg .tooltip {
   text-decoration: none;
   position: relative;
   height: -webkit-max-content;
@@ -179,18 +269,18 @@ section .box .agg .tooltip {
           justify-content: center;
 }
 
-section .box .agg .tooltip:hover span {
+.shopers .box .agg .tooltip:hover span {
   display: block;
   position: fixed;
   overflow: hidden;
 }
 
-section .box .agg i {
+.shopers .box .agg i {
   font-size: 25px;
   cursor: pointer;
 }
 
-section .box .agg span {
+.shopers .box .agg span {
   display: none;
   background-color: #f3f3f3;
   padding: 7px;
