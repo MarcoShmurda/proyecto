@@ -236,4 +236,185 @@ body {
   width: 100%;
   height: 100%;
 }
+
+.shopers {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-left: 15px;
+  padding-top: 30px;
+  background-color: #cfcfcf;
+  padding-bottom: 100vh;
+}
+
+.shopers .box {
+  width: 45%;
+  height: 17vh;
+  border-bottom: 2.5px solid #2f2f2f;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px 10px;
+  margin: 1em;
+  -webkit-box-shadow: 1px 1px 3px 0px #151515;
+          box-shadow: 1px 1px 3px 0px #151515;
+}
+
+.shopers .box .logo {
+  height: 100%;
+  width: 20%;
+  margin: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.shopers .box .logo img {
+  height: 100%;
+}
+
+.shopers .box .title {
+  height: 100%;
+  width: 55%;
+  margin: 0 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shopers .box .title .title_shop {
+  width: 100%;
+  height: 75%;
+  font-size: 5vmin;
+  font-weight: 900;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.shopers .box .title .title_shop img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.shopers .box .title .tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 25%;
+}
+
+.shopers .box .title .tags div {
+  border: 2px solid #c4312a;
+  border-radius: 10px;
+  padding: 4px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.shopers .box .title .tags div:first-child {
+  margin-left: 25px;
+}
+
+.shopers .box .title .tags div:hover {
+  background-color: #c4312a;
+}
+
+.shopers .box .title .tags div:hover span {
+  color: #fff;
+}
+
+.shopers .box .title .tags div span {
+  font-weight: 200;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1vmin;
+}
+
+.shopers .box .agg {
+  width: 15%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shopers .box .agg .tooltip {
+  text-decoration: none;
+  position: relative;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: 20px;
+  margin: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.shopers .box .agg .tooltip:hover span {
+  display: block;
+  position: fixed;
+  overflow: hidden;
+}
+
+.shopers .box .agg .tooltip i {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.shopers .box .agg .tooltip span {
+  display: none;
+  position: absolute;
+  background-color: #f3f3f3;
+  padding: 7px;
+  border-radius: 5px;
+  color: #292929;
+  border: 1px solid #292929;
+}
 /*# sourceMappingURL=index.css.map */
