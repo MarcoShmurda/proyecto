@@ -13,12 +13,14 @@ a{
 $color-primary: rgb(196, 49, 42);
 body{
     overflow-x: hidden;
+    padding-top: 12vh;
 }
 
 header{
     width: 100vw;
     height: 12.5vh;
     display: flex;
+    align-items: center;
     position: fixed;
     top: 0;
     left: 0;
@@ -39,7 +41,7 @@ header{
         }
     }
     nav{
-        width: 70%;
+        width: 40%;
         height: 100%;
         display: flex;
         align-items: center;
@@ -73,23 +75,24 @@ header{
                 }
             }
         }
-        i{
-            font-size: 30px;
-            margin: 0 15px;
-        }
-        .animation-icon{
-            animation: headShake;
-            animation-duration: .5s;
-        }
+        
+        
+        
+    }
+    div{
+        height: 100%;
+        width: 30%;
+        display: flex;
+        align-items: center;
         form{
+            position: relative;
             display: flex;
             align-items: center;
-            position: relative;
-            margin-left: 85px;
 
             input{
                 width: 250px;
                 height: 60px;
+                margin-left: 20px;
                 padding-left: 15px;
                 font-family: 'Alata' , sans-serif;
                 font-size: 20px;
@@ -106,15 +109,23 @@ header{
                     &:valid~label{
                         opacity: 0;
                     }
-                }
-                label{
-                    position: absolute;
-                    left: 15px;
-                    color: rgb(100, 100, 100);
-                    cursor: text;
-                    opacity: 1;
-                    transition: opacity .3s linear;
-                }
+            }
+            label{
+                position: absolute;
+                left: 35px;
+                color: rgb(100, 100, 100);
+                cursor: text;
+                opacity: 1;
+                transition: opacity .3s linear;
+            }
+        }
+        i{
+            font-size: 30px;
+            margin: 0 15px;
+        }
+        .animation-icon{
+            animation: headShake;
+            animation-duration: .5s;
         }
     }
     div.log-in{ 

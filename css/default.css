@@ -15,6 +15,7 @@ a {
 
 body {
   overflow-x: hidden;
+  padding-top: 12vh;
 }
 
 header {
@@ -23,6 +24,9 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -52,7 +56,7 @@ header div.log img {
 }
 
 header nav {
-  width: 70%;
+  width: 40%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -110,32 +114,31 @@ header nav ul li a:hover {
   color: #727272;
 }
 
-header nav i {
-  font-size: 30px;
-  margin: 0 15px;
-}
-
-header nav .animation-icon {
-  -webkit-animation: headShake;
-          animation: headShake;
-  -webkit-animation-duration: .5s;
-          animation-duration: .5s;
-}
-
-header nav form {
+header div {
+  height: 100%;
+  width: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
-  margin-left: 85px;
 }
 
-header nav form input {
+header div form {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header div form input {
   width: 250px;
   height: 60px;
+  margin-left: 20px;
   padding-left: 15px;
   font-family: 'Alata' , sans-serif;
   font-size: 20px;
@@ -145,26 +148,38 @@ header nav form input {
           box-shadow: 1px 1px 4px 0 #000;
 }
 
-header nav form input:focus {
+header div form input:focus {
   outline: none;
 }
 
-header nav form input:focus ~ label {
+header div form input:focus ~ label {
   opacity: 0;
 }
 
-header nav form input:valid ~ label {
+header div form input:valid ~ label {
   opacity: 0;
 }
 
-header nav form label {
+header div form label {
   position: absolute;
-  left: 15px;
+  left: 35px;
   color: #646464;
   cursor: text;
   opacity: 1;
   -webkit-transition: opacity .3s linear;
   transition: opacity .3s linear;
+}
+
+header div i {
+  font-size: 30px;
+  margin: 0 15px;
+}
+
+header div .animation-icon {
+  -webkit-animation: headShake;
+          animation: headShake;
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
 }
 
 header div.log-in {

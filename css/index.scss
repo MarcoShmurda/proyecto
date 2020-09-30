@@ -13,11 +13,11 @@ a{
 $color-primary: rgb(196, 49, 42);
 body{
     overflow-x: hidden;
-    padding-top: 12vh;
+    font-family: 'Montserrat' , 'sans-serif' ;
 }
-section{
+.head-sec{
     width: 100vw;
-    height: 80vh;
+    height: 60vh;
     background-color: #454545;
     .box-index{
         height: 100%;
@@ -25,7 +25,7 @@ section{
         display: flex;
         align-items: center;
         .box-left{
-            width: 40%;
+            width: 25%;
             height: 100%;
             display: flex;
             justify-content: center;
@@ -35,7 +35,7 @@ section{
             }
         }
         .box-right{
-            width: 60%;
+            width: 75%;
             height: 70%;
 
             .text-welcome{
@@ -45,8 +45,7 @@ section{
                 justify-content: center;
                 p{
                     color: #fff;
-                    font-size: 3.5vmin;
-                    font-family: 'Montserrat' , 'sans-serif' ;
+                    font-size: 3.2vmin;
                 }
             }
             .box-ins{
@@ -64,7 +63,7 @@ section{
                     }
                     span{
                         color: #fff;
-                        font-size: 4vmin;
+                        font-size: 3vmin;
                         margin: 0 20px;
                     }
                 }
@@ -72,123 +71,105 @@ section{
         }
     }
 }
-.shopers{
+
+.info{
+    height: 100vh;
     width: 100vw;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    align-items: flex-start;
-    padding-left: 15px;
-    padding-top: 30px;
-    background-color: rgb(207, 207, 207);
-    padding-bottom: 100vh;
-    .box{
-        width: calc(50% - 2em);
-        height: 17vh;
-        border-bottom: 2.5px solid #2f2f2f;
-        border-radius: 15px;
+    
+    .steps{
+        width: 100%;
+        height: 100%;
+        background-color: #959595;
         display: flex;
-        padding: 15px 10px;
-        margin: 1em;
-        box-shadow: 1px 1px 3px 0px #151515;
-        .logo{
-            height: 100%;
-            width: 20%;
-            display: flex;
-            justify-content: center;
-            img{
-                height: 100%;
-            }
+        flex-direction: column;
+
+        h2{
+            font-size: 35px;
+            color: rgb(41,41,41);
+            margin: 35px 0; 
+            align-self: center;
         }
-        .title{
-            height: 100%;
-            width: 55%;
-            margin: 0 5%;
+
+        div{       
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
+            width: 45%;
+            height: calc(80%/3);
+            margin: 0 20px;
+            position: relative;
 
-            .title_shop{
+            div#step{
                 width: 100%;
-                height: 75%;
-                font-size: 5vmin;
-                font-weight: 900;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                height: 100%;
+                border-radius: 10px;
+                background-color: rgb(230, 230, 230);
                 display: flex;
+                flex-direction: column;
                 align-items: center;
-                justify-content: center;
-                img{
-                    object-fit: cover;
-                    height: 100%;
-                    width: 100%;
-                }
-            }
-            .tags{
-                display: flex;
-                align-items: flex-end;
-                height: 25%;
-                
-                div{
-                    border: 2px solid $color-primary ;
-                    border-radius: 10px;
-                    padding: 4px;
-                    margin: 0 5px;
-                    cursor: pointer;
+                z-index: 1;
 
-                    &:first-child{
-                        margin-left: 25px;
-                    }
-                    &:hover{
-                        background-color: $color-primary;
-                        span{
-                            color:#fff;
-                        }
-                    }
+                .head-step{
+                    width:100% ;
+                    height: 15%;
+                    border-radius: 0;
+                    background-color: #454545;
+                    margin-bottom: 25px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     span{
-                        font-weight: 200;
-                        font-family: 'Source Sans Pro', sans-serif;
-                        font-size: 1vmin;
-                        
+                        color: #fff;
+                        font-size: 25px;
                     }
                 }
-            }
-        }
-        .agg{
-            width: 15%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-
-            .tooltip {
-                text-decoration:none;
-                position:relative;
-                height: max-content;
-                width: 20px;
-                margin: 10px 0;
-                display: flex;
-                justify-content: center;
-
-                &:hover span {
-                    display:block;
-                    position:fixed;
-                    overflow:hidden;
+                p{
+                    font-size: 22px;
+                    text-align: center;
+                    color: #141414;
+                    margin: 0 30px 30px;
+                }
+                i{
+                    font-size: 45px;
                 }
             }
 
-            i{
-                font-size: 25px;
-                cursor: pointer;
+            
+
+            &.first-step{
+                align-self: flex-start;
             }
-            span {
-                display:none;
-                background-color: #f3f3f3;
-                padding: 7px;
-                border-radius: 5px;
-                color: #292929;
-                border: 1px solid #292929;
+            &.second-step{
+                align-self: flex-end;
+            }
+            &.third-step{
+                align-self: flex-start;
+            }
+            
+            div#step-back{
+                position: absolute;
+                outline: 1px solid #000;
+                width: 100%;
+                height: 100%;
             }
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

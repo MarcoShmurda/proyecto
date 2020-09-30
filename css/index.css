@@ -15,16 +15,16 @@ a {
 
 body {
   overflow-x: hidden;
-  padding-top: 12vh;
+  font-family: 'Montserrat' , 'sans-serif';
 }
 
-section {
+.head-sec {
   width: 100vw;
-  height: 80vh;
+  height: 60vh;
   background-color: #454545;
 }
 
-section .box-index {
+.head-sec .box-index {
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -35,8 +35,8 @@ section .box-index {
           align-items: center;
 }
 
-section .box-index .box-left {
-  width: 40%;
+.head-sec .box-index .box-left {
+  width: 25%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -49,16 +49,16 @@ section .box-index .box-left {
           align-items: center;
 }
 
-section .box-index .box-left img {
+.head-sec .box-index .box-left img {
   width: 350px;
 }
 
-section .box-index .box-right {
-  width: 60%;
+.head-sec .box-index .box-right {
+  width: 75%;
   height: 70%;
 }
 
-section .box-index .box-right .text-welcome {
+.head-sec .box-index .box-right .text-welcome {
   height: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -71,13 +71,12 @@ section .box-index .box-right .text-welcome {
           justify-content: center;
 }
 
-section .box-index .box-right .text-welcome p {
+.head-sec .box-index .box-right .text-welcome p {
   color: #fff;
-  font-size: 3.5vmin;
-  font-family: 'Montserrat' , 'sans-serif';
+  font-size: 3.2vmin;
 }
 
-section .box-index .box-right .box-ins {
+.head-sec .box-index .box-right .box-ins {
   height: 15%;
   width: 100%;
   display: -webkit-box;
@@ -88,7 +87,7 @@ section .box-index .box-right .box-ins {
           justify-content: center;
 }
 
-section .box-index .box-right .box-ins div {
+.head-sec .box-index .box-right .box-ins div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -98,146 +97,39 @@ section .box-index .box-right .box-ins div {
   margin: 0 30px;
 }
 
-section .box-index .box-right .box-ins div i {
+.head-sec .box-index .box-right .box-ins div i {
   color: #cf1717;
   font-size: 40px;
 }
 
-section .box-index .box-right .box-ins div span {
+.head-sec .box-index .box-right .box-ins div span {
   color: #fff;
-  font-size: 4vmin;
+  font-size: 3vmin;
   margin: 0 20px;
 }
 
-.shopers {
+.info {
+  height: 100vh;
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  padding-left: 15px;
-  padding-top: 30px;
-  background-color: #cfcfcf;
-  padding-bottom: 100vh;
-}
-
-.shopers .box {
-  width: calc(50% - 2em);
-  height: 17vh;
-  border-bottom: 2.5px solid #2f2f2f;
-  border-radius: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 15px 10px;
-  margin: 1em;
-  -webkit-box-shadow: 1px 1px 3px 0px #151515;
-          box-shadow: 1px 1px 3px 0px #151515;
-}
-
-.shopers .box .logo {
-  height: 100%;
-  width: 20%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.shopers .box .logo img {
-  height: 100%;
-}
-
-.shopers .box .title {
-  height: 100%;
-  width: 55%;
-  margin: 0 5%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.shopers .box .title .title_shop {
+.info .steps {
   width: 100%;
-  height: 75%;
-  font-size: 5vmin;
-  font-weight: 900;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.shopers .box .title .title_shop img {
-  -o-object-fit: cover;
-     object-fit: cover;
   height: 100%;
-  width: 100%;
-}
-
-.shopers .box .title .tags {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  height: 25%;
-}
-
-.shopers .box .title .tags div {
-  border: 2px solid #c4312a;
-  border-radius: 10px;
-  padding: 4px;
-  margin: 0 5px;
-  cursor: pointer;
-}
-
-.shopers .box .title .tags div:first-child {
-  margin-left: 25px;
-}
-
-.shopers .box .title .tags div:hover {
-  background-color: #c4312a;
-}
-
-.shopers .box .title .tags div:hover span {
-  color: #fff;
-}
-
-.shopers .box .title .tags div span {
-  font-weight: 200;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 1vmin;
-}
-
-.shopers .box .agg {
-  width: 15%;
-  height: 100%;
+  background-color: #959595;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -245,47 +137,103 @@ section .box-index .box-right .box-ins div span {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-.shopers .box .agg .tooltip {
-  text-decoration: none;
-  position: relative;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  width: 20px;
-  margin: 10px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.shopers .box .agg .tooltip:hover span {
-  display: block;
-  position: fixed;
-  overflow: hidden;
-}
-
-.shopers .box .agg i {
-  font-size: 25px;
-  cursor: pointer;
-}
-
-.shopers .box .agg span {
-  display: none;
-  background-color: #f3f3f3;
-  padding: 7px;
-  border-radius: 5px;
+.info .steps h2 {
+  font-size: 35px;
   color: #292929;
-  border: 1px solid #292929;
+  margin: 35px 0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.info .steps div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 45%;
+  height: calc(80%/3);
+  margin: 0 20px;
+  position: relative;
+}
+
+.info .steps div div#step {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #e6e6e6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+}
+
+.info .steps div div#step .head-step {
+  width: 100%;
+  height: 15%;
+  border-radius: 0;
+  background-color: #454545;
+  margin-bottom: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.info .steps div div#step .head-step span {
+  color: #fff;
+  font-size: 25px;
+}
+
+.info .steps div div#step p {
+  font-size: 22px;
+  text-align: center;
+  color: #141414;
+  margin: 0 30px 30px;
+}
+
+.info .steps div div#step i {
+  font-size: 45px;
+}
+
+.info .steps div.first-step {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.info .steps div.second-step {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.info .steps div.third-step {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.info .steps div div#step-back {
+  position: absolute;
+  outline: 1px solid #000;
+  width: 100%;
+  height: 100%;
 }
 /*# sourceMappingURL=index.css.map */
