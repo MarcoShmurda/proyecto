@@ -13,14 +13,6 @@ let iconUser = document.querySelector('.fas.fa-user').addEventListener('click',(
     boxSign.classList.toggle('mover-log-in')
 })
 
-let step = document.getElementById('step')
-let stepBack = document.getElementById('step-back')
-
-    step.addEventListener('click', ()=>{
-        step.classList.add('animate__flipOutY')
-        stepBack.classList.add('animate__flipInY')
-    })
-
 
 var tooltips = document.querySelectorAll('.tooltip span');
 
@@ -32,4 +24,3 @@ window.onmousemove = function (e) {
         tooltips[i].style.left = x;
     }
 };
-
