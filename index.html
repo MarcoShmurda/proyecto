@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,17 +18,18 @@
         </div>
         <nav>
             <ul>
-                <li class="active"><a href="#">Inicio</a></li>
-                <li><a href="#">Categoria</a></li>
-                <li><a href="#">Favoritos</a></li>
+                <li class="active"><a href="index.html">Inicio</a></li>
+                <li><a href="shops.html">Tiendas</a></li>
                 <li><a href="#">Información</a></li>
             </ul>
-             <form action="">
+        </nav>
+        <div>
+            <form action="">
                 <input type="text" autocomplete="off"  name="buscardor" id="buscador" required>
                 <label for="buscador">¿Cual es tu antojo hoy?</label>
             </form>
             <i class="fas fa-search"></i>
-        </nav>
+        </div>
         <div class="log-in">
             <i class='fas fa-user' ></i>
         </div>
@@ -48,7 +49,7 @@
         </div>
     </header>
 
-    <section>
+    <section class="head-sec">
 
         <div class="box-index">
             <div class="box-left">
@@ -56,7 +57,7 @@
             </div>
             <div class="box-right">
                 <div class="text-welcome">
-                    <p>Tus antojos en solo 3 pasos</p>
+                    <p>Haz tus compras desde la comodidad de tu casa</p>
                 </div>
                 <div class="box-ins">
                     <div>
@@ -64,11 +65,11 @@
                         <span>Buscar</span>
                     </div>
                     <div>
-                        <i class="fas fa-shopping-cart"></i>
+                        <i class="fab fa-shopify"></i>
                         <span>Comprar</span>
                     </div>
                     <div>
-                        <i class="fas fa-search"></i>
+                        <i class="fas fa-shopping-basket"></i>
                         <span>Recibir</span>
                     </div>
                 </div>
@@ -77,53 +78,57 @@
 
     </section>
 
-    <section class="shopers">
-        <div class="box">
-            <div class="logo">
-                <img src="img/logo-interprise.png" alt="">
-            </div>
-            <div class="title">
-                <div class="title_shop">
-                    <span>McDonald's</span>
+    <section class="info">
+        
+        <div class="steps">
+        
+            <h2>¿Como funciona Tutankamon?</h2>
+            
+            <div class="first-step">
+                <div id="step" class="animate__animated">
+                    <div class="head-step"><span>Buscar</span></div>
+                    <p>Busca el abasto que se adapte a tus necesidades para realizar tus compras </p>
+                    <i class="fas fa-store"></i>
+                </div>
+
+                <div id="step-back" class="first-step-back animate__animated">
+                    <div class="head-step"><span>Buscar</span></div>
+                    <p>Parte de atras</p>
+                    <i class="fas fa-store"></i>
                 </div>
             </div>
-            <div class="agg">
-                <div>
-                    <div class="tooltip">
-                        <i class="fas fa-star"></i>
-                        <span>Agregar a favoritos</span>
-                    </div>
+
+            <div class="second-step">
+                <div id="step" class="second-step">
+                    <div class="head-step"><span>Comprar</span></div>
+                    <p>Haz tu mercado agregando al carrito los productos que se ajusten a tu necesidad</p>
+                    <i class="fas fa-shopping-cart"></i>
                 </div>
-                <div class="tooltip">
-                    <i class="fas fa-bars"></i>
-                    <span>Mostrar el menu del local</span>
-                </div>
-            </div>
-        </div>
-        <div class="box">
-            <div class="logo">
-                <img src="img/593px-Burger_King_logo.svg.png" alt="">
-            </div>
-            <div class="title">
-                <div class="title_shop">
-                    <span>Burguer King</span>
+                    
+                <div id="step-back" class="second-step-back animate__animated">
+                    <div class="head-step"><span>Buscar</span></div>
+                    <p>Parte de atras</p>
+                    <i class="fas fa-store"></i>
                 </div>
             </div>
-            <div class="agg">
-                <div>
-                    <div class="tooltip">
-                        <i class="fas fa-star"></i>
-                        <span>Agregar a favoritos</span>
-                    </div>
+
+            <div class="third-step">
+                <div id="step" class="third-step">
+                    <div class="head-step"><span>Recibir</span></div>
+                    <p>Espera en la comodidad de tu casa tus compras</p>
+                    <i class="fas fa-shipping-fast"></i>
                 </div>
-                <div class="tooltip">
-                    <i class="fas fa-bars"></i>
-                    <span>Mostrar el menu del local</span>
+
+                <div id="step-back" class="third-step-back animate__animated">
+                    <div class="head-step"><span>Buscar</span></div>
+                    <p>Parte de atras</p>
+                    <i class="fas fa-store"></i>
                 </div>
             </div>
         </div>
     </section>
-
+    
+    
     <script src="js/index.js"></script>
 </body>
 </html>
