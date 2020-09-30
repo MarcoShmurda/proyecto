@@ -206,6 +206,9 @@ header div.box-log-in {
   right: 0;
   top: 13vh;
   width: 270px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   padding: 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -285,6 +288,7 @@ header div.box-log-in form div input:valid ~ label {
   left: 5px;
   font-size: 15px;
   color: #57b7d8;
+  visibility: visible;
 }
 
 header div.box-log-in form div label {
@@ -295,6 +299,7 @@ header div.box-log-in form div label {
   cursor: text;
   -webkit-transition: all .3s linear;
   transition: all .3s linear;
+  visibility: visible;
 }
 
 header div.box-log-in a {

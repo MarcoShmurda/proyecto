@@ -144,6 +144,7 @@ header{
         right: 0;
         top: 13vh;
         width: 270px;
+        height: max-content;
         padding: 20px 0;
         display: flex;
         flex-direction: column;
@@ -193,6 +194,7 @@ header{
                         left: 5px;
                         font-size: 15px;
                         color: rgb(87, 183, 216);
+                        visibility: visible;
                     }
                 }
                 label{
@@ -202,6 +204,7 @@ header{
                     color: rgb(150, 150, 150);
                     cursor: text;
                     transition: all .3s linear;
+                    visibility: visible;
                 }
             }
         }
