@@ -1,0 +1,527 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Montserrat' , 'sans-serif';
+  background-color: rgb(210,210,210);
+}
+
+.head-sec {
+  width: 100vw;
+  height: 60vh;
+  background-image: url("../img/fruit-basket-1114060_1280.jpg");
+}
+
+.head-sec .box-index {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.head-sec .box-index .box-left {
+  width: 30%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.head-sec .box-index .box-left img {
+  width: 350px;
+}
+
+.head-sec .box-index .box-right {
+  width: 60%;
+  height: 70%;
+  margin:1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1.5px solid #fff;
+  border-radius: 10px ;
+  background-color: rgba(0,0,0,.4)
+}
+.title{
+  color: #fff;
+  font-size: 3em;
+  margin: 20px 0;
+}
+.section-body{
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+.section-body .text-welcome {
+  height: 40%;
+  padding: 5px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-body .text-welcome p {
+  color: #fff;
+  font-weight:bold;
+  font-size: 3.2vmin;
+  text-align: center;
+}
+
+.section-body .box-ins {
+  padding: 30px 0 0 ;
+  height: max-content;
+  width: min-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-body .box-ins div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+          flex-direction: column;
+}
+
+.section-body .box-ins div i {
+  color: #fff;
+  font-size: 40px;
+}
+
+.section-body .box-ins div span {
+  color: #fff;
+  font-size: 3vmin;
+  font-weight: bold;
+  margin: 0 20px;
+}
+
+
+
+
+
+.shopers {
+  width: 50vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-left: 10px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.shopers .box {
+  width: 90%;
+  height: 17vh;
+  background-color: #fff;
+  border-bottom: 2.5px solid #2f2f2f;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px 10px;
+  margin: 1em;
+  -webkit-box-shadow: 1px 1px 3px 0px #151515;
+          box-shadow: 1px 1px 3px 0px #151515;
+}
+
+.shopers .box .logo {
+  outline: 1px solid #000;
+  height: 95%;
+  width: calc(30% - 20px);
+  margin: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+          align-items: center;
+}
+
+.shopers .box .logo img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.shopers .box .title {
+  outline: 1px solid #000;
+  height: 100%;
+  width: 60%;
+  margin: 0 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shopers .box .title .title_shop {
+  width: 100%;
+  height: 75%;
+  font-size: 3.2vmin;
+  font-weight: 900;
+  color: #000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.shopers .box .agg {
+  width: 15%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shopers .box .agg .tooltip {
+  text-decoration: none;
+  position: relative;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: 20px;
+  margin: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.shopers .box .agg .tooltip:hover span {
+  display: block;
+  position: fixed;
+  overflow: hidden;
+}
+
+.shopers .box .agg .tooltip i {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.shopers .box .agg .tooltip span {
+  display: none;
+  position: absolute;
+  background-color: #f3f3f3;
+  padding: 7px;
+  border-radius: 5px;
+  color: #292929;
+  border: 1px solid #292929;
+}
+
+
+
+footer{
+  width: 100vw;
+  height: 25vh;
+  background-color: rgb(120,120,120);
+}
+
+.box-footer{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.left-footer{
+  width: calc(40% - 90px);
+  height: 100%;
+  margin: 0 45px;
+  display:flex;
+  flex-direction: column;
+}
+.box-for-title{
+  height: 50%;
+  width: 100%;
+}
+.footer-title{
+  padding: 12px 0;
+  color: #fff;
+  font-size: 17px;
+}
+.redes{
+  width: 100%;
+  display: flex;
+}
+.box-red{
+  width: 35px;
+  height: 35px;
+  margin: 0 7px;
+}
+.box-red img{
+  width: 100%;
+  height:100%;
+}
+
+.pay-form{
+  display: flex;
+  flex-direction: column;
+}
+.pay{
+  width: 100%;
+  display:flex;
+}
+.box-pay{
+  width: 40px;
+  height: 40px;
+  margin: 0 12px;
+}
+.box-pay img{
+  width: 100%;
+  height: 100%;
+}
+
+.logo-enter{
+  height: 100%;
+  width: calc(20% - 90px);
+  margin: 0 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title-enter{
+  font-size: 25px;
+  font-weight: bolder;
+  color: #fff;
+  height: 25%;
+}
+.bx-logo{
+  height: 75%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.bx-logo img{
+  width: 100%
+}
+.legality{
+  width: calc(40% - 90px);
+  height: 100%;
+  margin: 0 45px;
+}
+.bx-leg{
+  height: 100%;
+  width: 100%;
+  padding: 30px;
+}
+.bx-leg a{
+  display: block;
+  text-align: right;
+  text-decoration: underline;
+  color: rgb(10,10,10);
+  font-weight: 400;
+  margin: 7px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.info {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.info .steps {
+  width: 100%;
+  height: 100%;
+  background-color: #959595;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.info .steps h2 {
+  font-size: 35px;
+  color: #292929;
+  margin: 35px 0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.info .steps div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 45%;
+  height: calc(80%/3);
+  margin: 0 20px;
+  position: relative;
+}
+
+.info .steps div div#step {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #e6e6e6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+}
+
+.info .steps div div#step .head-step {
+  width: 100%;
+  height: 15%;
+  border-radius: 0;
+  background-color: #454545;
+  margin-bottom: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.info .steps div div#step .head-step span {
+  color: #fff;
+  font-size: 25px;
+}
+
+.info .steps div div#step p {
+  font-size: 22px;
+  text-align: center;
+  color: #141414;
+  margin: 0 30px 30px;
+}
+
+.info .steps div div#step i {
+  font-size: 45px;
+}
+
+.info .steps div.first-step {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.info .steps div.second-step {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.info .steps div.third-step {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.info .steps div div#step-back {
+  position: absolute;
+  outline: 1px solid #000;
+  width: 100%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=index.css.map */

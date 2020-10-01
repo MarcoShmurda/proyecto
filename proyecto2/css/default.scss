@@ -1,0 +1,215 @@
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+$color-primary: rgb(196, 49, 42);
+body{
+    overflow-x: hidden;
+    padding-top: 12vh;
+}
+
+header{
+    width: 100vw;
+    height: 12.5vh;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(225, 225, 225);
+    font-family: 'Alata' , sans-serif;
+    box-shadow: -3px 3px 9px 1px #000  ;
+    z-index: 1000;
+    
+    div.log{
+        width: 20%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            width: 90%;
+        }
+    }
+    nav{
+        width: 40%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        ul{
+            display: flex;
+            align-items: center;
+            margin-left: 30px;
+            height: 4vh;
+            li{
+                width: 100%;
+                height: 100%;
+                margin: 0 7px;
+                font-size: 22px;
+                display: flex;
+                align-items: flex-start;
+                &.active{
+                    border-bottom: 2.5px solid $color-primary;
+                }
+                
+                a{
+                box-sizing: content-box;
+                width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-content: center;
+                    justify-content: center;
+                    color: rgb(41, 41, 41);
+                    &:hover{
+                        color: rgb(114, 114, 114);
+                    }
+                }
+            }
+        }
+        
+        
+        
+    }
+    div{
+        height: 100%;
+        width: 30%;
+        display: flex;
+        align-items: center;
+        form{
+            position: relative;
+            display: flex;
+            align-items: center;
+
+            input{
+                width: 250px;
+                height: 60px;
+                margin-left: 20px;
+                padding-left: 15px;
+                font-family: 'Alata' , sans-serif;
+                font-size: 20px;
+                border-radius: 60px;
+                border: 1px solid $color-primary;
+                box-shadow: 1px 1px 4px 0 #000;
+
+                    &:focus{
+                        outline: none;
+                    }
+                    &:focus~label{
+                        opacity: 0;
+                    }
+                    &:valid~label{
+                        opacity: 0;
+                    }
+            }
+            label{
+                position: absolute;
+                left: 35px;
+                color: rgb(100, 100, 100);
+                cursor: text;
+                opacity: 1;
+                transition: opacity .3s linear;
+            }
+        }
+        i{
+            font-size: 30px;
+            margin: 0 15px;
+        }
+        .animation-icon{
+            animation: headShake;
+            animation-duration: .5s;
+        }
+    }
+    div.log-in{ 
+        width: 10%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+            .fas.fa-user{
+                font-size: 35px;
+                cursor: pointer;
+            }
+    }
+    div.box-log-in{
+        position: absolute;
+        right: 0;
+        top: 13vh;
+        width: 270px;
+        height: max-content;
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid $color-primary;
+        border-radius: 25px;
+        background-color: rgb(255, 255, 255);
+        transform: translate(100%);
+        transition: transform .25s linear;
+
+        &.mover-log-in{
+            transform: translate(0);
+        }
+
+        span{
+            margin:15px 0 0 0;
+            font-size: 22px;
+        }
+        form{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            div{
+                margin: 30px 0 0 0;
+                width: 70%;
+                position: relative;
+                &:last-child{
+                    margin-bottom:30px ;
+                }
+                input{
+                    width: 100%;
+                    height: 35px;
+                    border-radius: 2px;
+                    padding-left: 15px;
+                    border: none;
+                    border-bottom: 2px solid $color-primary;
+                    border-radius: 10px;
+                    box-shadow: 1px 1px 4px 0 #000;
+                        &:focus{
+                        outline: none;
+                        border: 2px solid $color-primary;
+                    }
+                    &:focus~label,
+                    &:valid~label{
+                        top:-27px;
+                        left: 5px;
+                        font-size: 15px;
+                        color: rgb(87, 183, 216);
+                        visibility: visible;
+                    }
+                }
+                label{
+                    position: absolute;
+                    top: 5px;   
+                    left: 15px;
+                    color: rgb(150, 150, 150);
+                    cursor: text;
+                    transition: all .3s linear;
+                    visibility: visible;
+                }
+            }
+        }
+        a{
+                margin: 15px 0;
+        }
+    }
+}
